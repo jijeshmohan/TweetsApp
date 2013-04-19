@@ -6,18 +6,20 @@
 //  Copyright (c) 2013 Jijesh Mohan. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TweetViewController.h"
 
-@interface ViewController ()
+@interface TweetViewController ()
 
 @end
 
-@implementation ViewController
+@implementation TweetViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    self.userName.text=[_tweet valueForKey:@"from_user_name"];
+    self.tweetText.text=[_tweet valueForKey:@"text"];
 }
 
 - (void)didReceiveMemoryWarning

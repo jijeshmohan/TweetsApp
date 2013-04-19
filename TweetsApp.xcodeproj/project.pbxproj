@@ -17,7 +17,10 @@
 		020BA4901721A07700CB7AF5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 020BA48F1721A07700CB7AF5 /* Default@2x.png */; };
 		020BA4921721A07700CB7AF5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 020BA4911721A07700CB7AF5 /* Default-568h@2x.png */; };
 		020BA4951721A07700CB7AF5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 020BA4931721A07700CB7AF5 /* MainStoryboard.storyboard */; };
-		020BA4981721A07700CB7AF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 020BA4971721A07700CB7AF5 /* ViewController.m */; };
+		020BA4981721A07700CB7AF5 /* TweetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 020BA4971721A07700CB7AF5 /* TweetViewController.m */; };
+		020BA4A01721A1B200CB7AF5 /* TweetListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 020BA49F1721A1B200CB7AF5 /* TweetListController.m */; };
+		020BA4A31721A28D00CB7AF5 /* icontexto_user_web20_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 020BA4A11721A28D00CB7AF5 /* icontexto_user_web20_twitter.png */; };
+		020BA4A41721A28D00CB7AF5 /* tweets.json in Resources */ = {isa = PBXBuildFile; fileRef = 020BA4A21721A28D00CB7AF5 /* tweets.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +38,12 @@
 		020BA48F1721A07700CB7AF5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		020BA4911721A07700CB7AF5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		020BA4941721A07700CB7AF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		020BA4961721A07700CB7AF5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		020BA4971721A07700CB7AF5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		020BA4961721A07700CB7AF5 /* TweetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweetViewController.h; sourceTree = "<group>"; };
+		020BA4971721A07700CB7AF5 /* TweetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetViewController.m; sourceTree = "<group>"; };
+		020BA49E1721A1B200CB7AF5 /* TweetListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetListController.h; sourceTree = "<group>"; };
+		020BA49F1721A1B200CB7AF5 /* TweetListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetListController.m; sourceTree = "<group>"; };
+		020BA4A11721A28D00CB7AF5 /* icontexto_user_web20_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icontexto_user_web20_twitter.png; sourceTree = "<group>"; };
+		020BA4A21721A28D00CB7AF5 /* tweets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tweets.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,8 @@
 		020BA46F1721A07700CB7AF5 = {
 			isa = PBXGroup;
 			children = (
+				020BA4A11721A28D00CB7AF5 /* icontexto_user_web20_twitter.png */,
+				020BA4A21721A28D00CB7AF5 /* tweets.json */,
 				020BA4811721A07700CB7AF5 /* TweetsApp */,
 				020BA47A1721A07700CB7AF5 /* Frameworks */,
 				020BA4791721A07700CB7AF5 /* Products */,
@@ -86,8 +95,10 @@
 				020BA48A1721A07700CB7AF5 /* AppDelegate.h */,
 				020BA48B1721A07700CB7AF5 /* AppDelegate.m */,
 				020BA4931721A07700CB7AF5 /* MainStoryboard.storyboard */,
-				020BA4961721A07700CB7AF5 /* ViewController.h */,
-				020BA4971721A07700CB7AF5 /* ViewController.m */,
+				020BA49E1721A1B200CB7AF5 /* TweetListController.h */,
+				020BA49F1721A1B200CB7AF5 /* TweetListController.m */,
+				020BA4961721A07700CB7AF5 /* TweetViewController.h */,
+				020BA4971721A07700CB7AF5 /* TweetViewController.m */,
 				020BA4821721A07700CB7AF5 /* Supporting Files */,
 			);
 			path = TweetsApp;
@@ -163,6 +174,8 @@
 				020BA4901721A07700CB7AF5 /* Default@2x.png in Resources */,
 				020BA4921721A07700CB7AF5 /* Default-568h@2x.png in Resources */,
 				020BA4951721A07700CB7AF5 /* MainStoryboard.storyboard in Resources */,
+				020BA4A31721A28D00CB7AF5 /* icontexto_user_web20_twitter.png in Resources */,
+				020BA4A41721A28D00CB7AF5 /* tweets.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +188,8 @@
 			files = (
 				020BA4881721A07700CB7AF5 /* main.m in Sources */,
 				020BA48C1721A07700CB7AF5 /* AppDelegate.m in Sources */,
-				020BA4981721A07700CB7AF5 /* ViewController.m in Sources */,
+				020BA4981721A07700CB7AF5 /* TweetViewController.m in Sources */,
+				020BA4A01721A1B200CB7AF5 /* TweetListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
