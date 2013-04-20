@@ -51,25 +51,38 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="JAo-Bg-nqZ">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="325" id="RMW-vL-fG4"/>
+                                    <constraint firstAttribute="height" constant="319" id="alN-SB-ykR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4V-rF-SB5">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="1c8-T8-GKa"/>
+                                    <constraint firstAttribute="width" constant="103" id="bBn-F4-pw7"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="zb2-Fv-ZMI"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="mIH-Cj-LoX" firstAttribute="top" secondItem="2fS-Fb-MYB" secondAttribute="top" constant="78" id="ENz-eS-w2J"/>
-                            <constraint firstItem="JAo-Bg-nqZ" firstAttribute="top" secondItem="2fS-Fb-MYB" secondAttribute="top" constant="146" id="LwS-SK-J8B"/>
+                            <constraint firstItem="zb2-Fv-ZMI" firstAttribute="centerX" secondItem="mIH-Cj-LoX" secondAttribute="centerX" type="default" id="3gD-Ur-uCz"/>
+                            <constraint firstItem="zb2-Fv-ZMI" firstAttribute="centerX" secondItem="a4V-rF-SB5" secondAttribute="centerX" type="default" id="AMy-6C-VKJ"/>
                             <constraint firstItem="mIH-Cj-LoX" firstAttribute="leading" secondItem="2fS-Fb-MYB" secondAttribute="leading" constant="56" id="MDi-Dw-Xd2"/>
                             <constraint firstAttribute="trailing" secondItem="JAo-Bg-nqZ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="NZg-8d-73N"/>
+                            <constraint firstItem="a4V-rF-SB5" firstAttribute="top" secondItem="2fS-Fb-MYB" secondAttribute="top" constant="9" id="QFl-pZ-ivZ"/>
+                            <constraint firstItem="zb2-Fv-ZMI" firstAttribute="centerY" secondItem="a4V-rF-SB5" secondAttribute="centerY" type="default" id="a2i-yy-Xsp"/>
                             <constraint firstItem="JAo-Bg-nqZ" firstAttribute="leading" secondItem="2fS-Fb-MYB" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="st5-tq-AbY"/>
+                            <constraint firstItem="mIH-Cj-LoX" firstAttribute="top" secondItem="a4V-rF-SB5" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="uEu-hZ-tgK"/>
+                            <constraint firstItem="JAo-Bg-nqZ" firstAttribute="top" secondItem="2fS-Fb-MYB" secondAttribute="top" constant="152" id="vLn-B8-vnE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="N6p-df-Hy2"/>
                     <connections>
+                        <outlet property="indicator" destination="zb2-Fv-ZMI" id="Xbc-R8-OaG"/>
                         <outlet property="tweetText" destination="JAo-Bg-nqZ" id="3aH-vx-V3l"/>
+                        <outlet property="userImage" destination="a4V-rF-SB5" id="IPu-Xf-YiB"/>
                         <outlet property="userName" destination="mIH-Cj-LoX" id="DiN-US-AL6"/>
                     </connections>
                 </viewController>
@@ -103,7 +116,9 @@
         <class className="TweetViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TweetViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="indicator" candidateClass="UIActivityIndicatorView"/>
                 <relationship kind="outlet" name="tweetText" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="userImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="userName" candidateClass="UILabel"/>
             </relationships>
         </class>
